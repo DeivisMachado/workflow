@@ -5,7 +5,7 @@
 
 	const valores = linhas
 		.map((tr) => {
-			const td = tr.querySelector("td:nth-child(24)");
+			const td = tr.querySelector("td:nth-child(25)");
 			if (!td) return "";
 
 			const texto = td.textContent.trim();
