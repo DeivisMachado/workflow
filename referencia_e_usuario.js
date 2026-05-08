@@ -10,13 +10,13 @@
     .map((tr) => {
       const tds = tr.querySelectorAll("td");
       const referencia = tds[14]?.textContent?.trim(); // coluna 15
-      const usuario = tds[32]?.textContent?.trim();    // coluna 33
+      const usuario = tds[33]?.textContent?.trim();    // coluna 34
       return referencia && usuario ? { referencia, usuario } : null;
     })
     .filter(Boolean);
 
   if (!dados.length) {
-    alert("Nenhum dado válido encontrado (colunas 15 e 33).");
+    alert("Nenhum dado válido encontrado (colunas 15 e 34).");
     return;
   }
 
